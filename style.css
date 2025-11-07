@@ -198,6 +198,9 @@ section {
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
+  background: none;
+  border: none;
+  padding: 0.5rem;
 }
 
 .hamburger span {
