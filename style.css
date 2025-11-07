@@ -234,11 +234,79 @@ section {
   justify-content: center;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   padding-top: 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated Background */
+.animated-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 1;
+}
+
+.blob {
+  transform-origin: center;
+  will-change: transform;
+}
+
+.blob-1 {
+  animation: blob-float-1 20s ease-in-out infinite;
+}
+
+.blob-2 {
+  animation: blob-float-2 25s ease-in-out infinite;
+}
+
+.blob-3 {
+  animation: blob-float-3 30s ease-in-out infinite;
+}
+
+@keyframes blob-float-1 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate(30px, -30px) scale(1.1) rotate(5deg);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.95) rotate(-5deg);
+  }
+}
+
+@keyframes blob-float-2 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate(-30px, 30px) scale(0.9) rotate(-10deg);
+  }
+  66% {
+    transform: translate(40px, -20px) scale(1.05) rotate(10deg);
+  }
+}
+
+@keyframes blob-float-3 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate(20px, 40px) scale(1.08) rotate(8deg);
+  }
+  66% {
+    transform: translate(-40px, -30px) scale(0.92) rotate(-8deg);
+  }
 }
 
 .home-content {
   text-align: center;
   animation: fadeInUp 1s ease;
+  position: relative;
+  z-index: 1;
 }
 
 .profile-image-wrapper {
