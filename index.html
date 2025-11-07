@@ -3,11 +3,315 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Patrick Battistini</title>
+  <title>Patrick Battistini - Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Ciao, sono Patrick Battistini 👋</h1>
-  <p>Benvenuto nel mio sito personale!</p>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">πK</a>
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#progetti" class="nav-link">Progetti</a></li>
+        <li class="nav-item"><a href="#curriculum" class="nav-link">Curriculum</a></li>
+        <li class="nav-item"><a href="#contatti" class="nav-link">Contatti</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home / About Me Section -->
+  <section id="home" class="home-section">
+    <div class="container">
+      <div class="home-content">
+        <div class="profile-image-wrapper">
+          <div class="profile-image">
+            <!-- Placeholder per la foto profilo -->
+            <div class="profile-placeholder">PB</div>
+          </div>
+        </div>
+        <h1 class="main-title">Patrick Battistini</h1>
+        <p class="subtitle">Studente laureato in Beni Culturali</p>
+        <p class="description">
+          Appassionato di tecnologia, sviluppo software e progettazione digitale.
+          Mi dedico a creare soluzioni innovative che uniscono la cultura con il mondo tech.
+        </p>
+        <div class="cta-buttons">
+          <a href="#progetti" class="btn btn-primary">Scopri i miei progetti</a>
+          <a href="#contatti" class="btn btn-secondary">Contattami</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Progetti Section -->
+  <section id="progetti" class="progetti-section">
+    <div class="container">
+      <h2 class="section-title">Progetti</h2>
+      <p class="section-subtitle">Una selezione dei miei lavori più recenti</p>
+
+      <div class="progetti-grid">
+        <!-- Progetto 1 -->
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Progetto Portfolio</h3>
+            <p class="project-description">
+              Sito web personale realizzato con HTML, CSS e JavaScript vanilla.
+              Design minimalista e completamente responsive.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <a href="#" class="project-link">Scopri di più →</a>
+          </div>
+        </div>
+
+        <!-- Progetto 2 -->
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Applicazione Web</h3>
+            <p class="project-description">
+              Sviluppo di un'applicazione web interattiva per la gestione e catalogazione
+              di beni culturali digitali.
+            </p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Database</span>
+            </div>
+            <a href="#" class="project-link">Scopri di più →</a>
+          </div>
+        </div>
+
+        <!-- Progetto 3 -->
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+              </svg>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Progetto Open Source</h3>
+            <p class="project-description">
+              Contributi a progetti open source e sviluppo di librerie JavaScript
+              per la community.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Open Source</span>
+              <span class="tag">Git</span>
+              <span class="tag">Community</span>
+            </div>
+            <a href="#" class="project-link">Scopri di più →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curriculum Section -->
+  <section id="curriculum" class="curriculum-section">
+    <div class="container">
+      <h2 class="section-title">Curriculum</h2>
+      <p class="section-subtitle">Il mio percorso formativo e professionale</p>
+
+      <div class="cv-grid">
+        <!-- Formazione -->
+        <div class="cv-card">
+          <div class="cv-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+          </div>
+          <h3 class="cv-title">Formazione</h3>
+          <div class="cv-item">
+            <h4>Laurea in Beni Culturali</h4>
+            <p class="cv-period">2020 - 2023</p>
+            <p class="cv-description">Percorso di studi dedicato alla valorizzazione e gestione del patrimonio culturale.</p>
+          </div>
+        </div>
+
+        <!-- Esperienze -->
+        <div class="cv-card">
+          <div class="cv-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+          </div>
+          <h3 class="cv-title">Esperienze</h3>
+          <div class="cv-item">
+            <h4>Sviluppatore Web Freelance</h4>
+            <p class="cv-period">2022 - Presente</p>
+            <p class="cv-description">Progettazione e sviluppo di siti web e applicazioni digitali per clienti privati.</p>
+          </div>
+        </div>
+
+        <!-- Competenze -->
+        <div class="cv-card">
+          <div class="cv-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <h3 class="cv-title">Competenze</h3>
+          <div class="skills-list">
+            <span class="skill-tag">HTML & CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">UI/UX Design</span>
+            <span class="skill-tag">Responsive Design</span>
+          </div>
+        </div>
+
+        <!-- Lingue -->
+        <div class="cv-card">
+          <div class="cv-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </div>
+          <h3 class="cv-title">Lingue</h3>
+          <div class="cv-item">
+            <div class="language-item">
+              <span class="language-name">Italiano</span>
+              <span class="language-level">Madrelingua</span>
+            </div>
+            <div class="language-item">
+              <span class="language-name">Inglese</span>
+              <span class="language-level">B2</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cv-download">
+        <a href="https://www.linkedin.com/in/patrick-battistini" target="_blank" rel="noopener noreferrer" class="linkedin-badge">
+          <div class="linkedin-badge-content">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="white">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            <div class="linkedin-badge-text">
+              <h4>Visualizza il mio Curriculum</h4>
+              <p>Patrick Battistini</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contatti Section -->
+  <section id="contatti" class="contatti-section">
+    <div class="container">
+      <h2 class="section-title">Contatti</h2>
+      <p class="section-subtitle">Hai un progetto in mente? Parliamone!</p>
+
+      <div class="contatti-grid">
+        <!-- Form di contatto -->
+        <div class="contact-form-wrapper">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input type="text" id="name" name="name" required placeholder="Il tuo nome">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="la.tua@email.com">
+            </div>
+            <div class="form-group">
+              <label for="message">Messaggio</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Scrivi qui il tuo messaggio..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Invia Messaggio</button>
+          </form>
+        </div>
+
+        <!-- Info di contatto -->
+        <div class="contact-info">
+          <div class="contact-card">
+            <h3>Contattami direttamente</h3>
+            <div class="contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:patrick.battistini00@gmail.com">patrick.battistini00@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <h3>Seguimi sui social</h3>
+            <div class="social-icons">
+              <a href="https://github.com/di0stort" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/patrick-battistini" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/_pi.kappa_?igsh=bG10cTlqNnZ5MWts" target="_blank" rel="noopener noreferrer" class="social-icon" title="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Patrick Battistini. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
