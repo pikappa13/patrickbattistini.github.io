@@ -560,7 +560,7 @@ section {
 
 .linkedin-badge {
   display: inline-block;
-  background: linear-gradient(135deg, #0077B5 0%, #005582 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
   padding: 1.5rem 2.5rem;
   border-radius: 12px;
   text-decoration: none;
@@ -572,7 +572,7 @@ section {
 .linkedin-badge:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-xl);
-  border-color: #0077B5;
+  border-color: var(--color-accent);
 }
 
 .linkedin-badge-content {
