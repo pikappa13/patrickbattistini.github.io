@@ -4,7 +4,11 @@
       "Bash(git add:*)",
       "Bash(git commit -m \"$(cat <<''EOF''\nAggiornamento sito personale: foto profilo e miglioramenti design\n\n- Aggiunta foto profilo personale (assets/propic.jpg)\n- Logo navbar cambiato in πK\n- Badge LinkedIn con palette colori coerente\n- Email aggiornata a patrick.battistini00@gmail.com\n- Link social aggiornati (GitHub, LinkedIn, Instagram)\n- Miglioramenti CSS per zoom immagine profilo\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(git log:*)",
+      "Bash(git reset:*)",
+      "Bash(identify:*)",
+      "Bash(dir:*)"
     ],
     "deny": [],
     "ask": []
