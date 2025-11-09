@@ -1,4 +1,58 @@
 // ==========================================
+// DARK MODE TOGGLE
+// ==========================================
+
+const themeToggle = document.getElementById('theme-toggle');
+const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+// Check for saved theme preference or use system preference
+const currentTheme = localStorage.getItem('theme') ||
+  (prefersDarkScheme.matches ? 'dark' : 'light');
+
+// Apply saved theme on page load
+if (currentTheme === 'dark') {
+  document.body.classList.add('dark-mode');
+}
+
+// Toggle theme on button click
+themeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+
+  // Save preference to localStorage
+  const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+  localStorage.setItem('theme', theme);
+
+  // Update SVG gradients
+  updateSVGGradients();
+});
+
+// Update SVG gradients based on theme
+function updateSVGGradients() {
+  const isDark = document.body.classList.contains('dark-mode');
+  const grad1Stop1 = document.querySelector('#grad1 stop:first-child');
+  const grad1Stop2 = document.querySelector('#grad1 stop:last-child');
+  const grad2Stop1 = document.querySelector('#grad2 stop:first-child');
+  const grad2Stop2 = document.querySelector('#grad2 stop:last-child');
+
+  if (isDark) {
+    // Dark mode colors - Indigo theme
+    grad1Stop1.style.stopColor = 'rgba(99, 102, 241, 0.08)';
+    grad1Stop2.style.stopColor = 'rgba(79, 70, 229, 0.06)';
+    grad2Stop1.style.stopColor = 'rgba(79, 70, 229, 0.08)';
+    grad2Stop2.style.stopColor = 'rgba(99, 102, 241, 0.06)';
+  } else {
+    // Light mode colors - Original blue
+    grad1Stop1.style.stopColor = 'rgba(15, 52, 96, 0.03)';
+    grad1Stop2.style.stopColor = 'rgba(26, 26, 46, 0.02)';
+    grad2Stop1.style.stopColor = 'rgba(26, 26, 46, 0.03)';
+    grad2Stop2.style.stopColor = 'rgba(15, 52, 96, 0.02)';
+  }
+}
+
+// Initialize SVG gradients on page load
+document.addEventListener('DOMContentLoaded', updateSVGGradients);
+
+// ==========================================
 // NAVBAR SCROLL EFFECT
 // ==========================================
 
