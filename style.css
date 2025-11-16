@@ -846,6 +846,7 @@ body.dark-mode .theme-toggle .moon-icon {
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-xs);
+  justify-content: center;
 }
 
 .skill-tag {
