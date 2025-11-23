@@ -1898,6 +1898,40 @@ body.dark-mode .spiaggiapp-title {
   transform: translateY(-3px);
 }
 
+/* Disabled Button */
+.btn-spiaggiapp-disabled {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background-color: #e5e7eb;
+  color: #9ca3af;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.125rem;
+  cursor: not-allowed;
+  opacity: 0.7;
+  position: relative;
+}
+
+.btn-text-strikethrough {
+  text-decoration: line-through;
+}
+
+.btn-coming-soon {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: var(--spiaggiapp-primary);
+  color: white;
+  font-size: 0.625rem;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 /* Phone Mockup */
 .spiaggiapp-hero-mockup {
   display: flex;
@@ -1931,12 +1965,20 @@ body.dark-mode .spiaggiapp-title {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .phone-screen img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.phone-screen img + .phone-placeholder {
+  display: none;
 }
 
 .phone-placeholder {
@@ -2034,6 +2076,7 @@ body.dark-mode .spiaggiapp-section-title {
   border-radius: 16px;
   border: 1px solid var(--color-gray);
   transition: all var(--transition-normal);
+  text-align: center;
 }
 
 .feature-card:hover {
@@ -2050,7 +2093,7 @@ body.dark-mode .spiaggiapp-section-title {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: var(--spacing-sm);
+  margin: 0 auto var(--spacing-sm);
 }
 
 .feature-icon svg {
@@ -2442,7 +2485,8 @@ body.dark-mode .spiaggiapp-section-title {
   }
 
   .btn-spiaggiapp-primary,
-  .btn-spiaggiapp-secondary {
+  .btn-spiaggiapp-secondary,
+  .btn-spiaggiapp-disabled {
     width: 100%;
     justify-content: center;
   }

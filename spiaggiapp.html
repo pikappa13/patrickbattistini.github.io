@@ -5,18 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO Meta Tags -->
-  <title>SpiaggiApp | Gestionale per Stabilimenti Balneari</title>
-  <meta name="description" content="SpiaggiApp è l'app gestionale per stabilimenti balneari. Gestisci ombrelloni, cabine, prenotazioni e clienti in un'unica app Flutter per Android e iOS." />
-  <meta name="keywords" content="gestionale stabilimenti balneari, app spiaggia, gestione ombrelloni, prenotazioni spiaggia, app lido, SpiaggiApp, gestionale lido, app Flutter spiaggia" />
+  <title>SpiaggiApp | Gestionale per Stabilimenti Balneari - App Android e iOS</title>
+  <meta name="description" content="SpiaggiApp è l'app gestionale per stabilimenti balneari. Gestisci ombrelloni, cabine, prenotazioni e clienti in un'unica app Flutter per Android e iOS. Scarica gratis su Google Play." />
+  <meta name="keywords" content="gestionale stabilimenti balneari, app spiaggia, gestione ombrelloni, prenotazioni spiaggia, app lido, SpiaggiApp, gestionale lido, app Flutter spiaggia, software gestione spiaggia, app prenotazioni ombrelloni, gestionale lido balneare, app cabine spiaggia" />
   <meta name="author" content="Patrick Battistini" />
   <meta name="robots" content="index, follow" />
+  <meta name="language" content="Italian" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://patrickbattistini.it/spiaggiapp.html" />
   <meta property="og:title" content="SpiaggiApp | Gestionale per Stabilimenti Balneari" />
-  <meta property="og:description" content="Gestisci ombrelloni, cabine e prenotazioni del tuo stabilimento balneare con SpiaggiApp." />
+  <meta property="og:description" content="Gestisci ombrelloni, cabine e prenotazioni del tuo stabilimento balneare con SpiaggiApp. App gratuita per Android e iOS." />
   <meta property="og:image" content="https://patrickbattistini.it/assets/spiaggiapp.png" />
+  <meta property="og:locale" content="it_IT" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://patrickbattistini.it/spiaggiapp.html" />
+  <meta name="twitter:title" content="SpiaggiApp | Gestionale Stabilimenti Balneari" />
+  <meta name="twitter:description" content="App gestionale per stabilimenti balneari. Gestisci ombrelloni, cabine e prenotazioni." />
+  <meta name="twitter:image" content="https://patrickbattistini.it/assets/spiaggiapp.png" />
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://patrickbattistini.it/spiaggiapp.html" />
@@ -65,12 +74,28 @@
               </svg>
               Scarica su Google Play
             </a>
+            <span class="btn btn-spiaggiapp-disabled">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/>
+              </svg>
+              <span class="btn-text-strikethrough">Scarica su App Store</span>
+              <span class="btn-coming-soon">in arrivo</span>
+            </span>
+            <span class="btn btn-spiaggiapp-disabled">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+              <span class="btn-text-strikethrough">Apri da Web</span>
+              <span class="btn-coming-soon">in arrivo</span>
+            </span>
           </div>
         </div>
         <div class="spiaggiapp-hero-mockup">
           <div class="phone-mockup">
             <div class="phone-screen">
-              <img src="assets/spiaggiapp-screenshot.png" alt="Screenshot SpiaggiApp" onerror="this.style.display='none'">
+              <img src="assets/spiaggiapp-screenshot.jpg" alt="Screenshot SpiaggiApp" onerror="this.style.display='none'">
               <div class="phone-placeholder">
                 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                   <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
@@ -427,6 +452,112 @@
       <p class="footer-copyright">&copy; 2025 Patrick Battistini. Tutti i diritti riservati.</p>
     </div>
   </footer>
+
+  <!-- Schema.org JSON-LD - SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "SpiaggiApp",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Android, iOS",
+    "description": "App gestionale per stabilimenti balneari. Gestisci ombrelloni, cabine, prenotazioni e clienti in un'unica app.",
+    "url": "https://patrickbattistini.it/spiaggiapp.html",
+    "downloadUrl": "https://play.google.com/store/apps/details?id=com.spiaggiapp.app",
+    "image": "https://patrickbattistini.it/assets/spiaggiapp.png",
+    "author": {
+      "@type": "Person",
+      "name": "Patrick Battistini",
+      "url": "https://patrickbattistini.it/"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock"
+    },
+    "featureList": [
+      "Gestione griglia ombrelloni",
+      "Prenotazioni giornaliere e stagionali",
+      "Gestione cabine",
+      "Listini dinamici",
+      "CRM clienti",
+      "Meteo integrato",
+      "Sincronizzazione cloud",
+      "Funzionamento offline"
+    ],
+    "softwareVersion": "1.0",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "ratingCount": "1"
+    }
+  }
+  </script>
+
+  <!-- Schema.org JSON-LD - BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://patrickbattistini.it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "SpiaggiApp",
+        "item": "https://patrickbattistini.it/spiaggiapp.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org JSON-LD - FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Come funziona la sincronizzazione di SpiaggiApp?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SpiaggiApp usa Firebase Firestore per sincronizzare i dati in tempo reale. Con il piano Sync, tutti i dispositivi del tuo team vedono le stesse informazioni aggiornate istantaneamente."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Posso gestire lettini e sedie extra?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Certo! Puoi aggiungere qualsiasi extra alle prenotazioni: lettini aggiuntivi, sedie, sdraio. Ogni extra ha il suo prezzo configurabile nel listino."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "SpiaggiApp funziona su iOS e Android?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SpiaggiApp è sviluppata con Flutter, quindi funziona nativamente sia su Android che su iOS con la stessa esperienza utente."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "SpiaggiApp funziona senza internet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sì! L'app salva i dati localmente e funziona anche offline. Quando torni online, si sincronizza automaticamente."
+        }
+      }
+    ]
+  }
+  </script>
 
   <script src="script.js"></script>
 </body>
