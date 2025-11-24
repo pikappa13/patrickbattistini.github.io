@@ -1758,9 +1758,33 @@ body.dark-mode .theme-toggle .moon-icon {
   background-color: rgba(255, 255, 255, 0.98);
 }
 
+.spiaggiapp-navbar .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .spiaggiapp-navbar .nav-logo {
   font-size: 1rem;
   font-weight: 500;
+}
+
+.nav-center-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-app-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-normal);
+}
+
+.nav-app-logo:hover {
+  transform: scale(1.1);
 }
 
 .btn-spiaggiapp-nav {
